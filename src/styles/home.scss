@@ -1,0 +1,118 @@
+.container {
+    display: flex;
+
+    .sidenav-container {
+        height: calc(100vh - 84px);
+        width: 18%;
+    }
+
+    .content-container {
+        height: calc(100vh - 84px);
+        padding: 20px;
+        width: 82%;
+        overflow-y: auto;
+
+        .tab-container {
+            display: flex;
+            text-align: center;
+            justify-content: space-between;
+            border-bottom: 1px solid #dee2e6;
+            padding: 15px 5px;
+
+
+            div {
+                background-color: #424242;
+                width: 25%;
+                color: #ffffff;
+                font-size: 14px;
+                font-weight: 600;
+                text-align: center;
+                margin: 10px;
+                padding: 10px 0;
+                border-radius: 14px;
+                cursor: pointer;
+            }
+        }
+
+        .form-container {
+            padding-top: 50px;
+
+            .form-label {
+                color: #000000;
+                font-size: 18px;
+                padding-right: 20px;
+            }
+
+            .form-selection {
+                width: 100%;
+            }
+
+            .form-row {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding-top: 12px;
+            }
+
+            .form-selection-container {
+                width: 70%;
+                padding-top: 25px;
+            }
+
+            .ant-form-item-label>label {
+                font-size: 18px !important;
+            }
+
+            .ant-input,
+            .ant-select-selector {
+                height: 40px;
+                border: 2px solid #2471A3;
+            }
+
+            textarea {
+                height: unset !important;
+            }
+
+            .title-container {
+                display: flex;
+                align-items: center;
+                padding-top: 40px;
+                padding-bottom: 10px;
+
+
+                .table-title {
+                    color: #000000;
+                    font-size: 21px;
+                    font-weight: bold;
+                    width: 25%;
+                }
+
+                .title-border {
+                    height: 3px;
+                    background-color: black;
+                    width: 100%;
+                }
+            }
+
+            table {
+                width: 100%;
+
+                thead {
+                    font-size: 13px;
+
+                }
+
+                td {
+                    text-align: center;
+                }
+
+                tbody {
+                    td {
+                        font-size: 18px;
+                    }
+                }
+
+            }
+        }
+    }
+}
